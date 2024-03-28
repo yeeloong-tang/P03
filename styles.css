@@ -1,0 +1,156 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 50px;
+  background-color: #f1f2ee;
+  height: 100vh;
+  /* transition: 0.25s ease-in-out; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  justify-content: center;
+  outline: 1px soild black;
+}
+
+.grid-item {
+  border: 1px solid black;
+  padding: 10px;
+}
+.grid-item-1 {
+  grid-column: 1 / -1;
+}
+
+.grid-item-2 {
+  grid-column: 1 / 2;
+}
+
+.grid-item-3 {
+  grid-column: 2 / -1;
+}
+
+.grid-item-4 {
+  grid-column: 2 / 5;
+}
+
+.grid-item-5 {
+  grid-column: 1 / -1;
+}
+
+.grid-item-6 {
+  grid-column: 1 / 3;
+  grid-row: span 4;
+}
+
+.grid-item-7 {
+  grid-column: 3 / -1;
+  grid-row: span 4;
+}
+
+.home {
+  align-content: stretch;
+}
+
+/* style guide styles */
+section {
+  margin: 25px 0px;
+}
+
+p {
+  /* max-width: 60%; */
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+code {
+  font-family: Monaco, monospace;
+  border-radius: 5px;
+}
+
+pre code {
+  background-color: #d1d1d0;
+  font-family: "Monaco", monospace;
+  display: block;
+  border: 0.5px solid rgb(216, 216, 216);
+  font-size: 0.8em;
+  line-height: 1.1em;
+  letter-spacing: -0.05em;
+  word-break: break-all;
+  padding: 15px 20px 12px 22px;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.button-nav {
+  color: #f54209;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 5px 10px;
+  transition: border-color 0.25s ease-in-out;
+  margin: 0;
+  font-weight: normal;
+}
+
+.button-nav:hover {
+  color: #000000;
+  border-color: #f54209;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+  width: fit-content;
+  text-wrap: nowrap;
+}
+
+a:hover {
+  color: #f54209;
+  text-decoration: dotted underline;
+}
+
+a:focus {
+  outline: 1px solid #f54209;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.25s ease-in-out;
+}
+
+a img {
+  transition: transform 0.25s ease-in-out;
+  border-radius: 6px;
+}
+
+a:hover img {
+  transform: rotate(-10deg) scale(1.1);
+  box-shadow: 5px 5px 10px #888888;
+}
+
+a:focus img {
+  outline: 2px solid grey;
+  transform: rotate(0) scale(1);
+}
