@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Selecta";
+  src: url(/fonts/SelectaTrial-Regular.woff) format("woff"),
+    url(/fonts/SelectaTrial-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+body {
+  font-family: "Selecta";
+}

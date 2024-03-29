@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="grid">
-        <div class="grid-item grid-item-6 home">
-          <p>above the fold, bio</p>
-        </div>
-  
-        <div class="grid-item grid-item-7 home">
-          <p>project card - for navigation</p>
-      </div>
+  </head>
 
-      <div class="grid-item grid-item-5">
-        <p>footer</p>
+  <body
+    class="grid grid-cols-5 gap-4 m-6 bg-white xl:bg-black grid lg:grid-cols-10"
+  >
+    <section class="aboutMe text-[#4B09F5] col-span-full xl:col-span-4">
+      <h1 class="text-3xl">Yee Loong Tang</h1>
+      <h2 class="text-4xl">
+        A visionary orchestrator who turns ideas into realities&mdash;with an
+        itch for scaling projects.
+      </h2>
+
+      <div
+        class="visualTag flex items-center px-2.5 py-3.75 text-[#4B09F5] col-span-4"
+      >
+        <div class="circle rounded-full bg-[#4B09F5] size-4 m-2.5"></div>
+        <p class="text-sm">
+          Open to take on new <br />
+          projects summer 24'
+        </p>
       </div>
-</body>
+    </section>
+  </body>
 </html>
