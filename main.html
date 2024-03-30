@@ -6,13 +6,14 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind-config.js"></script>
   </head>
 
   <body
     class="grid grid-cols-5 gap-4 m-6 bg-white xl:bg-black grid lg:grid-cols-10"
   >
     <section
-      class="aboutMe text-[#4B09F5] col-span-full grid grid-cols-subgrid xl:col-span-4"
+      class="aboutMe text-primary col-span-full grid grid-cols-subgrid xl:col-span-4"
     >
       <h1 class="text-3xl col-span-3">Yee Loong Tang</h1>
       <h2 class="text-4xl font-light tracking-tight col-span-full">
@@ -21,9 +22,9 @@
       </h2>
 
       <div
-        class="visualTag flex items-center px-2.5 py-3.75 text-[#4B09F5] col-span-4 xl:col-span-1 hover:bg-black transition duration-200"
+        class="visualTag flex items-center px-2.5 py-3.75 col-span-4 xl:col-span-1"
       >
-        <div class="circle rounded-full bg-[#4B09F5] size-4 m-2.5"></div>
+        <div class="circle rounded-full bg-primary size-4 m-2.5"></div>
         <p class="text-sm">
           Open to take on new <br />
           projects summer 24'
@@ -31,15 +32,27 @@
       </div>
 
       <div class="contactMe col-span-3">
-        <div class="Resume border px-2.5 py-3.5">
-          <h3>Button</h3>
-          <p>Subtitle</p>
-        </div>
+        <a
+          class="Resume block px-2.5 py-3.5 rounded-md hover:bg-hover transition duration-200 group"
+          href="/documents/resume.pdf"
+          target="_blank"
+        >
+          <div class="group-hover:translate-x-3 transition">
+            <h3 class>Resume</h3>
+            <p class>Currently &#64;TEDxSFU &#8599;</p>
+          </div>
+        </a>
 
-        <div class="Linkedin">
-          <h3>Button</h3>
-          <p>Subtitle</p>
-        </div>
+        <a
+          class="Linkedin block px-2.5 py-3.5 rounded-md hover:bg-hover transition duration-200 group"
+          href="https://linkedin.com/in/yee-loong-tang"
+          target="_blank"
+        >
+          <div class="group-hover:translate-x-3 transition">
+            <h3>Linkedin</h3>
+            <p>Let's Connect &#8599;</p>
+          </div>
+        </a>
       </div>
     </section>
   </body>
