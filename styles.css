@@ -129,8 +129,7 @@ a {
 }
 
 a:hover {
-  color: #f54209;
-  text-decoration: dotted underline;
+  color: #e4dafe;
 }
 
 a:focus {
