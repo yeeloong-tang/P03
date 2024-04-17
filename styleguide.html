@@ -3,185 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StyleGuide</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
   </head>
 
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Company Style Guide</title>
+  <body class="grid grid-cols-5 gap-4 m-10 bg-white">
+    <section
+      class="container text-primary col-span-full grid grid-cols-subgrid"
+    >
+      <a href="/index.html" class="col-span-3 hover:text-hover">
+        <h1 class="text-3xl col-span-3">Yee Loong Tang</h1>
+      </a>
 
-        <link rel="stylesheet" href="styles.css" />
-      </head>
+      <div class="col-span-full m-6">
+        <h1 class="text-3xl mt-4 mb-2">Style Guide</h1>
 
-      <body>
-        <h1>Portfolio Style Guide</h1>
-        <!-- Interactive Elements -->
-        <!-- <section class="wrapper" id="interactive-elements">
-            <div class="header">
-                <h2>Interactive Elements</h2>
-                <p>
-                  Below details various interactive elements with their CSS selectors
-                  along with any rendered elements if applicable.
-                </p>
-            </div>
+        <h2 class="text-lg mb-8 font-light tracking-tight">
+          Below contains all major visual language and ethos of my portfolio.
+        </h2>
 
-          <div class="item-container">
-            <h3>In-text links</h3>
+        <!-- section: interactive elements  -->
+        <h3 class="text-xl">Interactive Elements</h3>
 
-            <p><i>Rendered element</i></p>
-            <p>
-              Here is an example of an
-              <a href="#" class="interactive-link">In-Text Link</a>.
-            </p>
+        <h4 class="text-base mb-4 font-light tracking-tight">
+          In-text links, buttons, project cards with applied hover states, place
+          your mouse over them to trigger it!
+        </h4>
 
-            <p><i>CSS selector</i></p>
-            <p></p>
-            <p>.interactive-link</p>
-            <p><i>Sample code</i></p>
-            <pre><code> &lt;a&gt;href="#" class="interactive-link">In-Text Link&lt;/a&gt; </code></pre>
+        <!-- in-text link  -->
+        <p class="m-4">
+          This is an
+          <a href="" class="text-base font-light hover:text-hover">
+            in-text link
+          </a>
+          hover over it to reveal its hover state.
+        </p>
+
+        <!-- button  -->
+        <a
+          class="Button block px-2.5 py-3.5 rounded-md m-4 hover:bg-hover transition duration-200 group"
+          href=""
+        >
+          <div class="grid-cols-2 group-hover:translate-x-3 transition">
+            <h3 class>Button Name</h3>
+            <p class>Description &#8599;</p>
           </div>
-        </section> -->
+        </a>
 
-        
-        
+        <!-- project card -->
+        <a
+          class="projectCard block m-4 px-2.5 py-3.5 rounded-lg hover:bg-hover transition duration-200 group"
+          href="/drJart.html"
+        >
+          <div
+            class="imageContainer overflow-hidden rounded-md w-full h-auto object-cover group-hover: drop-shadow-sm"
+          >
+            <img
+              class="thubnail"
+              src="/thumbnails/drJart.png"
+              alt="'Dr.Jart Project Image"
+            />
+          </div>
 
-          <!-- in-text links -->
-          <section>
-            <h3>In-text links</h3>
+          <div class="group-hover:translate-x-3 transition pt-1.5">
+            <h2>Client</h2>
+            <p>Role / Contribution</p>
+            <p>Year &#8599;</p>
+          </div>
+        </a>
+        <!-- section end -->
 
-            <p><i>Rendered element</i></p>
-            <p>
-              Here is an example of an
-              <a href="#" class="interactive-link">In-Text Link</a>.
-            </p>
+        <!-- section: text styling -->
+        <h3 class="text-xl mt-10">Test Styling</h3>
 
-            <p><i>CSS selector</i></p>
-            <p></p>
-            <p>.interactive-link</p>
+        <h4 class="text-base mb-4 font-light tracking-tight">
+          Below details various text styles to achieve hirearchy and content
+          organization.
+        </h4>
 
-            <p><i>Sample code</i></p>
-            <pre><code> &lt;a&gt;href="#" class="interactive-link">In-Text Link&lt;/a&gt; </code></pre>
-          </section>
-
-          <!-- image as a link -->
-          <section>
-            <h3>Image as a link</h3>
-
-            <p><i>Rendered element</i></p>
-            <a href="#" class="image-link"
-              ><img
-                src="images/image.jpg"
-                alt="Image as Link"
-                width="543.6"
-                height="384"
-            /></a>
-
-            <p><i>CSS selector</i></p>
-            <p>.image-link</p>
-            <p>.image-link img</p>
-
-            <p><i>Sample code</i></p>
-            <pre><code>&lt;a href="#" class="image-link"&gt;&lt;img src="images/image.jpg" alt="Image as Link" width="543.6" height="384"&gt;&lt;/a&gt;</code></pre>
-          </section>
+        <div class="m-4">
+          <h1 class="text-3xl m-1">Heading Level 1</h1>
+          <h2 class="text-2xl m-1">Heading Level 2</h2>
+          <h3 class="text-xl m-1">Heading Level 3</h3>
+          <h4 class="text-lg m-1">Heading Level 4</h4>
         </div>
-        <hr />
 
-        <!-- Text Styling -->
-        <div id="text_elements">
-          <h2>Text Styling</h2>
-          <p>
-            Below details various text styles to acheive hirearchy and content
-            organzation.
+        <p class="text-base mb-4">
+          This is what the base style of a body copy looks like. It is 16px in
+          size.
+        </p>
+
+        <p class="text-sm font-light mb-4">
+          This is what an caption looks like. It is 14px in size and goes under
+          images.
+        </p>
+
+        <!-- section end  -->
+
+        <!-- section:visual Components -->
+        <h3 class="text-xl mt-10">Visual Components</h3>
+
+        <h4 class="text-base mb-4 font-light tracking-tight">
+          Below details the colors, radius, and font family that denote the
+          visual design of my portfolio.
+        </h4>
+
+        <div class="m-4">
+          <p class="mb-2">
+            Primary color is #4B09F5, denotes majority of the visual color.
           </p>
-
-          <!-- heading -->
-          <section>
-            <h1>Heading Level 1</h1>
-            <h2>Heading Level 2</h2>
-            <h3>Heading Level 3</h3>
-            <h4>Heading Level 4</h4>
-          </section>
-
-          <!-- paragraph -->
-          <section>
-            <p>This is a paragraph of text.</p>
-          </section>
-
-          <!-- num list -->
-          <section>
-            <ol>
-              <li>Numbered List Item 1</li>
-              <li>Numbered List Item 2</li>
-              <li>Numbered List Item 3</li>
-            </ol>
-          </section>
-        </div>
-        <hr />
-
-        <!-- Combined Elements -->
-        <div id="combined_elements">
-          <h2>Combined Elements</h2>
-          <p>
-            Below details various combined elements for navigation, and project cards.
+          <p class="mb-2">Secondary color is #4B09F5, used as hover states.</p>
+          <p class="mb-2">
+            The font family used throughout is called Selecta. It is a
+            sans-serif typeface by maxitype.
+          </p>
+          <p class="mb-2">
+            Boarder radius are employed to eliminate all straight edges. 16px
+            for image containers, and 6px for buttons.
           </p>
         </div>
-        <!-- Main Navigation -->
-        <section>
-          <h3>Navigation</h3>
+        <!-- section end  -->
 
-          <p><i>Rendered element</i></p>
-          <nav>
-            <ul class="nav-list">
-              <li><a class="button button-nav" href="#">Works</a></li>
-              <li><a class="button button-nav" href="#">About</a></li>
+        <!-- designer ethos  -->
+        <h3 class="text-xl mt-10">My Designer Ethos</h3>
 
-              <li><a class="button button-nav" href="#">Contact</a></li>
-            </ul>
-          </nav>
+        <h4 class="text-base mb-4 font-light tracking-tight">
+          Below is a concise statement that encapsulates me as a designer.
+        </h4>
 
-          <p><i>CSS selector</i></p>
-          <p>nav ul.nav-list</p>
-          <p>nav ul.nav-list li a.button.button-nav</p>
-
-          <p><i>Sample code</i></p>
-          <pre><code>
-              &lt;nav&gt;
-                  &lt;ul class="nav-list"&gt;
-                      &lt;li&gt;&lt;a class="button button-nav" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a class="button button-nav" href="#"&gt;Shop&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a class="button button-nav" href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a class="button button-nav" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-              &lt;/nav&gt;
-          </code></pre>
-        </section>
-
-       
-
-        <!-- Ethos Ideas -->
-        <section id="ethos_components">
-          <h2>Ethos Components</h2>
-          <p><strong>Personal Bio</strong></p>
-          <p>
-            I am a multidisciplinary designer who values building impactful products and staging exceptional ideas - with an irresistible itch for scaling projects! Anchored by community - building and experiential thinking, I thrive at setting a playing field for interdisciplinary teams that empower members to focus on what they do best and find their voice in the collaboration process. From insight generation to delivering compelling solutions, I combine experiential allure with strategic effectiveness-operating in the intersection of business and design.
+        <div class="m-4">
+          <p class="mb-2">
+            I am a multidisciplinary designer who values building impactful
+            products and staging exceptional experiences–with an irresistible
+            itch for scaling projects! Anchored by community-building and
+            experiential thinking, I thrive at setting a playing field for
+            interdisciplinary teams that empower creatives to focus on what they
+            do best and find their voice in the collaboration process. From
+            insight generation to delivering compelling solutions, I combine
+            experiential allure with strategic effectiveness–operating in the
+            intersection of business and design.
           </p>
-        </section>
-        <hr />
+        </div>
+      </div>
 
-        <!-- Brand Components -->
-        <section>
-          <h2>Visual Components</h2>
-          <p>Font Family: Helvetica</p>
-          <p>
-            Colour Palette: Black - primary (#000000), white - background
-            (#F1F2EE), and orange - accent (#F54209).
-          </p>
-      </body>
-    </html>
+      <!-- section end  -->
+    </section>
+    <section
+      class="footer mt-10 mb-10 text-primary col-span-full grid grid-cols-subgrid"
+    >
+      <hr class="col-span-full" />
+      <div class="email mt-4 mb-4 col-span-2">
+        <p class="text-sm">business x design</p>
+        <ul>
+          <li>
+            <a href="/index.html" class="text-sm font-light hover:text-hover">
+              home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/styleguide.html"
+              class="text-sm font-light hover:text-hover"
+            >
+              style guide
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yeeloong-tang/P03"
+              class="text-sm font-light hover:text-hover"
+              target="_blank"
+            >
+              github repo
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="email mt-4 mb-4 col-start-4 col-span-full">
+        <p class="text-sm">let's chat about the next big thing.</p>
+        <a
+          href="mailto:yeeloongtang@gmail.com?subject=The%20next%20big%20thing%3A"
+          class="text-sm font-light hover:text-hover"
+        >
+          yeeloongtang@gmail.com
+        </a>
+      </div>
+    </section>
   </body>
 </html>
